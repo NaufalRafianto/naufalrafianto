@@ -4,7 +4,7 @@ import PageName from "../components/PageName";
 
 import ToLink from "../components/ToLink";
 import Transition from "../components/Transition";
-import TagCloud from "TagCloud";
+import { TagCloud } from "react-tagcloud";
 
 export default function AboutPage({ cName }) {
   useEffect(() => {
@@ -35,7 +35,7 @@ export default function AboutPage({ cName }) {
 
       TagCloud(container, text, options);
     };
-  }, []);
+  });
 
   return (
     <>
