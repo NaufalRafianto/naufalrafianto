@@ -5,11 +5,8 @@ import PageName from "../components/PageName";
 import ToLink from "../components/ToLink";
 import Transition from "../components/Transition";
 import TagCloud from "TagCloud";
-import useWindowDimensions from "../components/WindowScreen";
 
 export default function AboutPage({ cName }) {
-  const { height, width } = useWindowDimensions();
-
   useEffect(() => {
     return () => {
       const container = ".tagCloud";
@@ -30,7 +27,7 @@ export default function AboutPage({ cName }) {
       ];
 
       const options = {
-        radius: width > 768 ? 250 : 150,
+        radius: 200,
         maxSpeed: "fast",
         initSpeed: "normal",
         keep: true,
