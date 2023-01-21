@@ -1,1 +1,1 @@
-Build with ReactJSandTailwindCSS
+Build with ReactJS and TailwindCSS
