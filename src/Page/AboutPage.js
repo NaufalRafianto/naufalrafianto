@@ -1,42 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import PageName from "../components/PageName";
-
+import RotatingCube from "../components/RotatingCube";
 import ToLink from "../components/ToLink";
 import Transition from "../components/Transition";
-import { TagCloud } from "react-tagcloud";
+// import { TagCloud } from "react-tagcloud";
 
 export default function AboutPage({ cName }) {
-  useEffect(() => {
-    return () => {
-      const container = ".tagCloud";
-      const text = [
-        "HTML",
-        "CSS",
-        "SASS",
-        "SCSS",
-        "JavaScript",
-        "Next JS",
-        "React JS",
-        "Node JS",
-        "Express JS",
-        "JQuery",
-        "Git",
-        "Firebase",
-        "MySQL",
-      ];
-
-      const options = {
-        radius: 200,
-        maxSpeed: "fast",
-        initSpeed: "normal",
-        keep: true,
-      };
-
-      TagCloud(container, text, options);
-    };
-  });
-
   return (
     <>
       <PageName To={"/About"} Text={"ABOUT"} />
@@ -46,7 +16,7 @@ export default function AboutPage({ cName }) {
             className={` w-[75%] h-[65%] rounded-md m-auto absolute flex justify-between mb-40 max-md:flex-col max-md:w-full max-md:h-[50%]  max-md:items-center`}
           >
             <motion.div
-              className={`${cName} h-full w-[50%] flex items-center  justify-center text-justify border-2 rounded-lg max-md:w-[90%] max-md:h-full `}
+              className={`${cName} h-full w-[50%] flex items-center mt-11 justify-center text-justify border-2 rounded-lg max-md:w-[90%] max-md:h-full `}
               whileHover={{
                 scale: 1.1,
                 boxShadow: `0 0 10px lightyellow`,
@@ -76,11 +46,14 @@ export default function AboutPage({ cName }) {
               </div>
             </motion.div>
 
-            <div className="w-[50%] flex-col items-center justify-between max-md:w-full -100">
-              <div className=" pl-20 text-2xl font-bold w-full text-center tracking-[10px] max-md:pl-0 opacity-80 mt-3">
-                SKILL
+            <div className="w-[50%] flex-col items-center justify-between max-md:w-full ">
+              <div className=" pl-20 text-2xl font-bold w-full text-center tracking-[10px] max-md:pl-0 opacity-80 mt-3 uppercase ">
+                Skill
               </div>
-              <div className="tagCloud w-full pl-20 max-md:pl-10 m-auto " />
+              <div className="bg-red-500 flex w-full h-full">
+                <div className="bg-red-200 w-full">tes</div>
+                <RotatingCube />
+              </div>
             </div>
           </div>
         </div>

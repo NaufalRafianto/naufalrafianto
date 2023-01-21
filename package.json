@@ -8,6 +8,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@frank-mayer/react-tag-cloud": "^1.1.1",
     "@headlessui/react": "^1.7.7",
     "@react-icons/all-files": "^4.1.0",
     "@react-three/fiber": "^8.10.0",
