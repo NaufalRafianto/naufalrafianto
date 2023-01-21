@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export default function HomePage({ cName }) {
   const [text] = useTypewriter({
-    words: ["Man-who-love-girl.tsx", "<ButLovetoCodeMost/>"],
+    words: ["howToBeRich();", "a-programmer-wannabe.tsx", "<MostlyStudent/>"],
     loop: true,
     delaySpeed: 1000,
   });
